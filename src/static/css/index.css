@@ -1,0 +1,28 @@
+/* stylelint-disable -- Tailwind config must have such imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* stylelint-enable */
+body {
+    font-family: Onest, serif;
+}
+
+@layer utilities {
+    .custom-scrollbar::-webkit-scrollbar {
+        @apply w-2 h-2;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        @apply bg-gradient-to-r from-primary to-[#7C4894]/80 rounded;
+    }
+}
+
+@layer utilities {
+    .custom-scrollbar-menu::-webkit-scrollbar {
+        @apply w-1 h-1;
+    }
+
+    .custom-scrollbar-menu::-webkit-scrollbar-thumb {
+        @apply bg-gradient-to-r from-primary to-[#7C4894]/80 rounded;
+    }
+}
